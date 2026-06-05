@@ -7,6 +7,7 @@ const projects = [
     description:
       "A modern hotel website with room showcase, booking inquiry system, and WhatsApp integration for fast reservations.",
     tags: ["Booking", "Gallery", "WhatsApp"],
+    link: "https://vnn-hotel.vercel.app/",
   },
   {
     title: "Jehovah's Tree School",
@@ -48,9 +49,12 @@ export default function Portfolio() {
       {/* Grid */}
       <div className="grid gap-8 md:grid-cols-2">
         {projects.map((project, index) => (
-          <div
+          <a
             key={index}
-            className="rounded-2xl border bg-white p-6 shadow-sm transition hover:shadow-md"
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block rounded-2xl border bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
           >
             {/* Top row */}
             <div className="mb-4 flex items-start justify-between">
@@ -63,7 +67,10 @@ export default function Portfolio() {
                 </p>
               </div>
 
-              <ExternalLink className="text-gray-400" size={18} />
+              <ExternalLink
+                className="group block rounded-2xl border bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+                size={18}
+              />
             </div>
 
             {/* Description */}
@@ -82,7 +89,7 @@ export default function Portfolio() {
                 </span>
               ))}
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </section>
