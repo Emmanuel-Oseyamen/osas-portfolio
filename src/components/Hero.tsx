@@ -8,7 +8,6 @@ import {
   Check,
   Code2,
   Sparkles,
-  Zap,
 } from "lucide-react";
 import FadeIn from "./FadeIn";
 
@@ -16,94 +15,179 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative isolate overflow-hidden bg-white"
+      className="
+        relative
+        isolate
+        overflow-hidden
+        bg-[#f8fafc]
+      "
     >
       {/* =========================================================
-          BACKGROUND ATMOSPHERE
+          BACKGROUND
       ========================================================= */}
 
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 overflow-hidden"
+        className="pointer-events-none absolute inset-0"
       >
-        {/* Main blue atmosphere */}
-        <div className="absolute left-[45%] top-[-18%] h-[650px] w-[650px] -translate-x-1/2 rounded-full bg-blue-100/50 blur-[140px]" />
+        {/* Main atmosphere */}
+        <div
+          className="
+            absolute
+            left-[38%]
+            top-[-25%]
+            h-[750px]
+            w-[750px]
+            -translate-x-1/2
+            rounded-full
+            bg-blue-100/45
+            blur-[150px]
+          "
+        />
 
-        {/* Indigo glow */}
-        <div className="absolute right-[-12%] top-[25%] h-[500px] w-[500px] rounded-full bg-indigo-100/40 blur-[130px]" />
+        {/* Right atmosphere */}
+        <div
+          className="
+            absolute
+            right-[-18%]
+            top-[15%]
+            h-[600px]
+            w-[600px]
+            rounded-full
+            bg-indigo-100/30
+            blur-[150px]
+          "
+        />
 
-        {/* Bottom neutral atmosphere */}
-        <div className="absolute bottom-[-20%] left-[20%] h-[450px] w-[450px] rounded-full bg-slate-100/80 blur-[120px]" />
+        {/* Bottom atmosphere */}
+        <div
+          className="
+            absolute
+            bottom-[-30%]
+            left-[25%]
+            h-[500px]
+            w-[500px]
+            rounded-full
+            bg-slate-200/50
+            blur-[130px]
+          "
+        />
 
         {/* Fine grid */}
         <div
-          className="absolute inset-0 opacity-[0.025]"
+          className="absolute inset-0 opacity-[0.022]"
           style={{
             backgroundImage:
               "linear-gradient(to right, #0f172a 1px, transparent 1px), linear-gradient(to bottom, #0f172a 1px, transparent 1px)",
-            backgroundSize: "64px 64px",
+            backgroundSize: "72px 72px",
           }}
         />
       </div>
 
+
       {/* =========================================================
-          HERO CONTAINER
+          MAIN HERO
       ========================================================= */}
 
-      <div className="relative mx-auto max-w-7xl px-6 pb-20 pt-8 sm:px-8 sm:pb-24 sm:pt-12 lg:px-10 lg:pb-28 lg:pt-16">
-        <div className="grid items-center gap-14 lg:grid-cols-[0.94fr_1.06fr] lg:gap-16 xl:gap-20">
+      <div
+        className="
+          relative
+          mx-auto
+          max-w-7xl
+          px-6
+          pb-24
+          pt-8
+          sm:px-8
+          sm:pb-28
+          sm:pt-12
+          lg:px-10
+          lg:pb-32
+          lg:pt-16
+        "
+      >
+        <div
+          className="
+            grid
+            items-center
+            gap-16
+            lg:grid-cols-[0.92fr_1.08fr]
+            lg:gap-14
+            xl:gap-20
+          "
+        >
 
           {/* =====================================================
-              LEFT — BRAND MESSAGE
+              LEFT — MESSAGE
           ===================================================== */}
 
           <FadeIn>
             <div className="relative z-10 max-w-2xl">
 
               {/* Eyebrow */}
-              <div className="mb-7 flex items-center gap-3">
-                <span className="relative flex h-2.5 w-2.5">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-500 opacity-50" />
-                  <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-blue-600" />
-                </span>
 
-                <p className="text-xs font-bold uppercase tracking-[0.28em] text-slate-500">
-                  Osas Web Studio
+              <div className="mb-7 flex items-center gap-3">
+
+                <span className="h-px w-9 bg-blue-600" />
+
+                <p
+                  className="
+                    text-[11px]
+                    font-bold
+                    uppercase
+                    tracking-[0.3em]
+                    text-slate-500
+                  "
+                >
+                  Web Design · Development
                 </p>
+
               </div>
+
 
               {/* Main heading */}
-              <h1 className="text-[3.3rem] font-bold leading-[0.98] tracking-[-0.055em] text-slate-950 sm:text-6xl md:text-7xl lg:text-[4.7rem] xl:text-[5.2rem]">
 
-                We build websites
+              <h1
+                className="
+                  max-w-3xl
+                  text-[3.4rem]
+                  font-bold
+                  leading-[0.94]
+                  tracking-[-0.065em]
+                  text-slate-950
+                  sm:text-6xl
+                  md:text-7xl
+                  lg:text-[4.7rem]
+                  xl:text-[5.35rem]
+                "
+              >
+                Websites that
                 <span className="block text-blue-600">
-                  people remember.
+                  make businesses
                 </span>
-
+                impossible to ignore.
               </h1>
 
-              {/* Accent line */}
-              <div className="mt-7 h-1 w-16 overflow-hidden rounded-full bg-slate-200">
-                <div className="h-full w-10 rounded-full bg-blue-600" />
-              </div>
 
               {/* Description */}
-              <p className="mt-7 max-w-xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
-                Modern websites for businesses that want to look
-                professional, earn trust, and turn attention into real
-                opportunities.
+
+              <p
+                className="
+                  mt-8
+                  max-w-xl
+                  text-base
+                  leading-7
+                  text-slate-600
+                  sm:text-lg
+                  sm:leading-8
+                "
+              >
+                I design and build modern websites for businesses that
+                want to look credible, earn trust, and turn visitors
+                into real customers.
               </p>
 
-              {/* Positioning */}
-              <p className="mt-5 max-w-lg text-sm leading-6 text-slate-500">
-                Strategy, design and development for hotels, schools,
-                clinics, restaurants, pharmacies and ambitious businesses
-                across Nigeria.
-              </p>
 
-              {/* =================================================
-                  CTA
-              ================================================= */}
+              {/* CTA */}
 
               <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
 
@@ -122,15 +206,15 @@ export default function Hero() {
                     text-sm
                     font-semibold
                     text-white
-                    shadow-[0_14px_35px_rgba(15,23,42,0.16)]
+                    shadow-[0_15px_40px_rgba(15,23,42,0.16)]
                     transition-all
                     duration-300
                     hover:-translate-y-1
                     hover:bg-blue-600
-                    hover:shadow-[0_18px_40px_rgba(37,99,235,0.25)]
+                    hover:shadow-[0_20px_45px_rgba(37,99,235,0.25)]
                   "
                 >
-                  Explore Our Work
+                  Explore My Work
 
                   <ArrowUpRight
                     size={17}
@@ -143,6 +227,7 @@ export default function Hero() {
                     "
                   />
                 </a>
+
 
                 <a
                   href="https://wa.me/2347079989263?text=Hi%20Osas%2C%20I%20need%20a%20website%20for%20my%20business."
@@ -157,14 +242,14 @@ export default function Hero() {
                     rounded-full
                     border
                     border-slate-200
-                    bg-white/80
+                    bg-white/70
                     px-7
                     py-4
                     text-sm
                     font-semibold
                     text-slate-900
                     shadow-sm
-                    backdrop-blur
+                    backdrop-blur-md
                     transition-all
                     duration-300
                     hover:-translate-y-1
@@ -178,322 +263,385 @@ export default function Hero() {
                   <ArrowUpRight
                     size={16}
                     className="
-                      opacity-60
+                      text-slate-400
                       transition-all
                       duration-300
-                      group-hover:translate-x-0.5
                       group-hover:-translate-y-0.5
+                      group-hover:translate-x-0.5
+                      group-hover:text-slate-900
                     "
                   />
                 </a>
 
               </div>
 
-              {/* =================================================
-                  TRUST POINTS
-              ================================================= */}
 
-              <div className="mt-10 flex flex-wrap gap-x-6 gap-y-3 border-t border-slate-200/80 pt-6">
+              {/* Trust row */}
+
+              <div
+                className="
+                  mt-10
+                  flex
+                  flex-wrap
+                  gap-x-6
+                  gap-y-3
+                  border-t
+                  border-slate-200/80
+                  pt-6
+                "
+              >
 
                 <TrustPoint label="Custom Design" />
 
                 <TrustPoint label="Mobile First" />
 
-                <TrustPoint label="Fast & SEO Ready" />
+                <TrustPoint label="SEO Ready" />
 
               </div>
 
             </div>
           </FadeIn>
 
+
           {/* =====================================================
               RIGHT — FOUNDER IMAGE
           ===================================================== */}
 
-          <FadeIn delay={0.15}>
+          <FadeIn delay={0.12}>
             <div className="relative mx-auto w-full max-w-[650px] lg:ml-auto">
 
-              {/* Ambient glow behind image */}
+              {/* Image glow */}
+
               <div
                 aria-hidden="true"
                 className="
                   absolute
-                  -inset-6
-                  rounded-[3rem]
-                  bg-blue-200/40
-                  blur-3xl
+                  -inset-10
+                  rounded-[4rem]
+                  bg-blue-200/30
+                  blur-[70px]
                 "
               />
 
-              {/* Secondary blue glow */}
+
+              {/* Main image */}
+
               <div
-                aria-hidden="true"
                 className="
-                  absolute
-                  -right-10
-                  top-1/4
-                  h-48
-                  w-48
-                  rounded-full
-                  bg-indigo-300/20
-                  blur-3xl
+                  group
+                  relative
+                  overflow-hidden
+                  rounded-[2.5rem]
+                  border
+                  border-white
+                  bg-slate-100
+                  shadow-[0_40px_100px_rgba(15,23,42,0.16)]
                 "
-              />
+              >
 
-              {/* =================================================
-                  IMAGE FRAME
-              ================================================= */}
+                <div className="relative aspect-[4/4.55]">
 
-              <div className="relative">
+                  <Image
+                    src="/osas-founder.png"
+                    alt="Osas — founder of Osas Web Studio"
+                    fill
+                    priority
+                    sizes="
+                      (max-width: 1024px) 100vw,
+                      55vw
+                    "
+                    className="
+                      object-cover
+                      object-center
+                      transition-transform
+                      duration-[1400ms]
+                      ease-out
+                      group-hover:scale-[1.025]
+                    "
+                  />
 
-                {/* Outer border */}
-                <div className="absolute -inset-[1px] rounded-[2rem] bg-gradient-to-br from-white via-slate-200 to-blue-200" />
 
-                {/* Image container */}
-                <div
-                  className="
-                    group
-                    relative
-                    overflow-hidden
-                    rounded-[2rem]
-                    border
-                    border-white/80
-                    bg-slate-100
-                    shadow-[0_35px_90px_rgba(15,23,42,0.18)]
-                  "
-                >
+                  {/* Cinematic overlay */}
 
-                  <div className="relative aspect-[4/4.25] overflow-hidden">
+                  <div
+                    aria-hidden="true"
+                    className="
+                      absolute
+                      inset-0
+                      bg-gradient-to-t
+                      from-slate-950/65
+                      via-slate-950/5
+                      to-transparent
+                    "
+                  />
 
-                    <Image
-                      src="/osas-founder.png"
-                      alt="Osas — founder of Osas Web Studio"
-                      fill
-                      priority
-                      sizes="
-                        (max-width: 1024px) 100vw,
-                        55vw
-                      "
-                      className="
-                        object-cover
-                        object-center
-                        transition-transform
-                        duration-[1400ms]
-                        ease-out
-                        group-hover:scale-[1.025]
-                      "
-                    />
 
-                    {/* Image cinematic gradient */}
-                    <div
-                      aria-hidden="true"
-                      className="
-                        absolute
-                        inset-0
-                        bg-gradient-to-t
-                        from-slate-950/55
-                        via-transparent
-                        to-transparent
-                        opacity-70
-                      "
-                    />
+                  {/* Subtle color wash */}
 
-                    {/* Subtle blue cinematic wash */}
-                    <div
-                      aria-hidden="true"
-                      className="
-                        absolute
-                        inset-0
-                        bg-gradient-to-tr
-                        from-blue-950/10
-                        via-transparent
-                        to-blue-400/10
-                        mix-blend-overlay
-                      "
-                    />
+                  <div
+                    aria-hidden="true"
+                    className="
+                      absolute
+                      inset-0
+                      bg-gradient-to-tr
+                      from-blue-950/10
+                      via-transparent
+                      to-blue-300/10
+                      mix-blend-overlay
+                    "
+                  />
 
-                    {/* Image bottom identity */}
-                    <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-7">
 
-                      <div className="flex items-end justify-between gap-4">
+                  {/* Image identity */}
 
-                        <div>
-                          <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/60">
-                            Founder · Designer · Developer
-                          </p>
+                  <div
+                    className="
+                      absolute
+                      bottom-0
+                      left-0
+                      right-0
+                      p-7
+                      sm:p-9
+                    "
+                  >
 
-                          <h2 className="mt-2 text-2xl font-bold tracking-tight text-white sm:text-3xl">
-                            Osas Web Studio
-                          </h2>
-                        </div>
+                    <div className="flex items-end justify-between gap-6">
 
-                        <div
+                      <div>
+
+                        <p
                           className="
-                            hidden
-                            h-12
-                            w-12
-                            shrink-0
-                            items-center
-                            justify-center
-                            rounded-full
-                            border
-                            border-white/20
-                            bg-white/10
-                            text-white
-                            backdrop-blur-md
-                            sm:flex
+                            text-[10px]
+                            font-bold
+                            uppercase
+                            tracking-[0.3em]
+                            text-white/60
                           "
                         >
-                          <ArrowUpRight size={20} />
-                        </div>
+                          Founder · Designer · Developer
+                        </p>
+
+                        <h2
+                          className="
+                            mt-2
+                            text-2xl
+                            font-bold
+                            tracking-tight
+                            text-white
+                            sm:text-3xl
+                          "
+                        >
+                          Osas
+                        </h2>
 
                       </div>
 
-                    </div>
-                  </div>
-                </div>
 
-                {/* =================================================
-                    AVAILABLE STATUS CARD
-                ================================================= */}
+                      <div
+                        className="
+                          hidden
+                          h-12
+                          w-12
+                          shrink-0
+                          items-center
+                          justify-center
+                          rounded-full
+                          border
+                          border-white/20
+                          bg-white/10
+                          text-white
+                          backdrop-blur-md
+                          sm:flex
+                        "
+                      >
+                        <ArrowUpRight size={20} />
+                      </div>
 
-                <div
-                  className="
-                    absolute
-                    -left-4
-                    top-7
-                    hidden
-                    rounded-2xl
-                    border
-                    border-white/80
-                    bg-white/95
-                    px-4
-                    py-3
-                    shadow-[0_18px_45px_rgba(15,23,42,0.14)]
-                    backdrop-blur-xl
-                    sm:block
-                    lg:-left-8
-                  "
-                >
-                  <div className="flex items-center gap-3">
-
-                    <span className="relative flex h-2.5 w-2.5">
-                      <span className="absolute h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60" />
-                      <span className="relative h-2.5 w-2.5 rounded-full bg-emerald-500" />
-                    </span>
-
-                    <div>
-                      <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-slate-400">
-                        Studio Status
-                      </p>
-
-                      <p className="mt-0.5 text-xs font-semibold text-slate-900">
-                        Available for projects
-                      </p>
                     </div>
 
-                  </div>
-                </div>
-
-                {/* =================================================
-                    CREATIVE CARD
-                ================================================= */}
-
-                <div
-                  className="
-                    absolute
-                    -bottom-7
-                    -right-4
-                    w-[210px]
-                    rounded-2xl
-                    border
-                    border-white/80
-                    bg-white/95
-                    p-4
-                    shadow-[0_22px_55px_rgba(15,23,42,0.16)]
-                    backdrop-blur-xl
-                    sm:-right-6
-                    sm:w-[230px]
-                  "
-                >
-
-                  <div className="flex items-start justify-between">
-
-                    <div
-                      className="
-                        flex
-                        h-10
-                        w-10
-                        items-center
-                        justify-center
-                        rounded-xl
-                        bg-blue-50
-                      "
-                    >
-                      <Code2
-                        size={18}
-                        className="text-blue-600"
-                      />
-                    </div>
-
-                    <Sparkles
-                      size={15}
-                      className="text-blue-500"
-                    />
-
-                  </div>
-
-                  <p className="mt-4 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">
-                    What we create
-                  </p>
-
-                  <p className="mt-1 text-sm font-bold leading-5 text-slate-900">
-                    Digital experiences built to make your business stand out.
-                  </p>
-
-                  <div className="mt-3 flex items-center gap-2 text-[10px] font-semibold text-slate-500">
-                    <Zap
-                      size={12}
-                      className="text-blue-600"
-                    />
-                    Design · Development · Strategy
                   </div>
 
                 </div>
 
               </div>
+
+
+              {/* =================================================
+                  STATUS PILL
+              ================================================= */}
+
+              <div
+                className="
+                  absolute
+                  -left-3
+                  top-7
+                  hidden
+                  rounded-2xl
+                  border
+                  border-white
+                  bg-white/95
+                  px-4
+                  py-3
+                  shadow-[0_20px_50px_rgba(15,23,42,0.12)]
+                  backdrop-blur-xl
+                  sm:block
+                  lg:-left-7
+                "
+              >
+
+                <div className="flex items-center gap-3">
+
+                  <span className="relative flex h-2.5 w-2.5">
+
+                    <span
+                      className="
+                        absolute
+                        h-full
+                        w-full
+                        animate-ping
+                        rounded-full
+                        bg-emerald-400
+                        opacity-60
+                      "
+                    />
+
+                    <span
+                      className="
+                        relative
+                        h-2.5
+                        w-2.5
+                        rounded-full
+                        bg-emerald-500
+                      "
+                    />
+
+                  </span>
+
+                  <div>
+
+                    <p
+                      className="
+                        text-[9px]
+                        font-bold
+                        uppercase
+                        tracking-[0.2em]
+                        text-slate-400
+                      "
+                    >
+                      Studio
+                    </p>
+
+                    <p className="mt-0.5 text-xs font-semibold text-slate-900">
+                      Available for projects
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              {/* =================================================
+                  SMALL CREATIVE CARD
+              ================================================= */}
+
+              <div
+                className="
+                  absolute
+                  -bottom-6
+                  -right-3
+                  w-[220px]
+                  rounded-2xl
+                  border
+                  border-white
+                  bg-white/95
+                  p-4
+                  shadow-[0_25px_60px_rgba(15,23,42,0.14)]
+                  backdrop-blur-xl
+                  sm:-right-5
+                "
+              >
+
+                <div className="flex items-center justify-between">
+
+                  <div
+                    className="
+                      flex
+                      h-9
+                      w-9
+                      items-center
+                      justify-center
+                      rounded-xl
+                      bg-blue-50
+                    "
+                  >
+                    <Code2
+                      size={17}
+                      className="text-blue-600"
+                    />
+                  </div>
+
+                  <Sparkles
+                    size={14}
+                    className="text-blue-500"
+                  />
+
+                </div>
+
+                <p
+                  className="
+                    mt-4
+                    text-[9px]
+                    font-bold
+                    uppercase
+                    tracking-[0.2em]
+                    text-slate-400
+                  "
+                >
+                  What I do
+                </p>
+
+                <p
+                  className="
+                    mt-1
+                    text-sm
+                    font-bold
+                    leading-5
+                    text-slate-900
+                  "
+                >
+                  Design & development for ambitious businesses.
+                </p>
+
+              </div>
+
             </div>
           </FadeIn>
 
         </div>
       </div>
 
+
       {/* =========================================================
-          BOTTOM SCROLL / CONTINUATION SIGNAL
+          BOTTOM EDGE
       ========================================================= */}
 
       <div
         aria-hidden="true"
         className="
           absolute
-          bottom-6
-          left-1/2
-          hidden
-          -translate-x-1/2
-          items-center
-          gap-3
-          text-[9px]
-          font-bold
-          uppercase
-          tracking-[0.3em]
-          text-slate-400
-          lg:flex
+          bottom-0
+          left-0
+          right-0
+          h-px
+          bg-gradient-to-r
+          from-transparent
+          via-slate-200
+          to-transparent
         "
-      >
-        <span className="h-px w-8 bg-slate-300" />
-        Scroll to explore
-        <span className="h-px w-8 bg-slate-300" />
-      </div>
+      />
+
     </section>
   );
 }
@@ -510,7 +658,19 @@ function TrustPoint({
 }) {
   return (
     <div className="flex items-center gap-2 text-xs font-semibold text-slate-500">
-      <span className="flex h-5 w-5 items-center justify-center rounded-full bg-blue-600 text-white">
+
+      <span
+        className="
+          flex
+          h-5
+          w-5
+          items-center
+          justify-center
+          rounded-full
+          bg-blue-600
+          text-white
+        "
+      >
         <Check
           size={11}
           strokeWidth={3}
@@ -518,6 +678,7 @@ function TrustPoint({
       </span>
 
       {label}
+
     </div>
   );
 }
