@@ -130,7 +130,7 @@ export default function Hero() {
                     hover:shadow-[0_18px_40px_rgba(37,99,235,0.25)]
                   "
                 >
-                  Explore My Work
+                  Explore Our Work
 
                   <ArrowUpRight
                     size={17}
