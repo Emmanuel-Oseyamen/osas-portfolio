@@ -10,7 +10,7 @@ const projects = [
     description:
       "A refined hospitality website designed to present the property, showcase its accommodation, and create a polished digital experience for prospective guests.",
     tags: ["Hospitality", "Rooms", "Gallery"],
-    link: "#",
+    link: "https://bisyl-suites.vercel.app/",
   },
   {
     title: "Fergmond Hotel",
@@ -18,7 +18,7 @@ const projects = [
     description:
       "A premium hotel experience focused on elegant presentation, accommodation discovery, visual storytelling, and direct guest enquiries.",
     tags: ["Luxury", "Hospitality", "Booking"],
-    link: "#",
+    link: "https://fergmond-luxury-hotel.vercel.app/",
   },
   {
     title: "Opheem Recipes & Lounge",
@@ -26,7 +26,7 @@ const projects = [
     description:
       "A modern restaurant and lounge website built to showcase the dining experience, signature offerings, atmosphere, and brand identity.",
     tags: ["Restaurant", "Menu", "Gallery"],
-    link: "#",
+    link: "https://opheem-recipes-lounge.vercel.app/",
   },
   {
     title: "Grand Cuba Hotel",
@@ -34,7 +34,7 @@ const projects = [
     description:
       "A high-end hospitality website combining cinematic imagery, premium typography, room presentation, and a refined guest experience.",
     tags: ["Luxury", "Rooms", "Hospitality"],
-    link: "#",
+    link: "https://grand-cuba-hotel.vercel.app/",
   },
   {
     title: "Maxl Elegance Hotel",
@@ -42,7 +42,7 @@ const projects = [
     description:
       "A sophisticated hotel website designed around elegant visuals, clear accommodation presentation, and a seamless path toward reservations.",
     tags: ["Hospitality", "Rooms", "Reservations"],
-    link: "#",
+    link: "https://malx-elegance-hotel-owq9.vercel.app/",
   },
   {
     title: "Ese Jones Apartments",
@@ -50,7 +50,7 @@ const projects = [
     description:
       "A property-focused website designed to present apartment spaces, amenities, and essential information in a clean and professional format.",
     tags: ["Apartments", "Property", "Gallery"],
-    link: "#",
+    link: "https://esejones-jwoh.vercel.app/",
   },
   {
     title: "Goldstep Hotels",
@@ -58,7 +58,7 @@ const projects = [
     description:
       "A modern hospitality website created to strengthen the hotel's online presence through structured information, visual presentation, and direct enquiries.",
     tags: ["Hotel", "Gallery", "Enquiries"],
-    link: "#",
+    link: "https://goldstep-xi.vercel.app/",
   },
   {
     title: "VNN Hotel",
