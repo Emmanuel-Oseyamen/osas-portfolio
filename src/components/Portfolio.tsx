@@ -104,10 +104,13 @@ export default function Portfolio() {
         aria-hidden="true"
         className="pointer-events-none absolute inset-0"
       >
+        {/* Blue glow */}
         <div className="absolute left-[-10%] top-[10%] h-[500px] w-[500px] rounded-full bg-blue-100/30 blur-[130px]" />
 
+        {/* Indigo glow */}
         <div className="absolute bottom-[-10%] right-[-10%] h-[500px] w-[500px] rounded-full bg-indigo-100/30 blur-[130px]" />
 
+        {/* Subtle grid */}
         <div
           className="absolute inset-0 opacity-[0.025]"
           style={{
@@ -131,6 +134,7 @@ export default function Portfolio() {
           transition={{ duration: 0.8 }}
           className="mb-20 max-w-4xl lg:mb-24"
         >
+          {/* Eyebrow */}
           <div className="mb-6 flex items-center gap-3">
             <span className="h-px w-10 bg-blue-600" />
 
@@ -139,6 +143,7 @@ export default function Portfolio() {
             </p>
           </div>
 
+          {/* Heading */}
           <h2 className="text-4xl font-bold leading-[1.02] tracking-[-0.045em] text-slate-950 sm:text-5xl md:text-6xl lg:text-7xl">
             Digital experiences
             <span className="block text-slate-400">
@@ -146,6 +151,7 @@ export default function Portfolio() {
             </span>
           </h2>
 
+          {/* Description + project count */}
           <div className="mt-7 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
 
             <p className="max-w-2xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
@@ -163,22 +169,12 @@ export default function Portfolio() {
 
 
         {/* =======================================================
-            FEATURED PROJECT
-        ======================================================= */}
-
-        <ProjectCard
-          project={projects[0]}
-          featured
-        />
-
-
-        {/* =======================================================
             PROJECT GRID
         ======================================================= */}
 
-        <div className="mt-8 grid gap-8 lg:grid-cols-2">
+        <div className="grid gap-8 lg:grid-cols-2">
 
-          {projects.slice(1).map((project, index) => (
+          {projects.map((project, index) => (
             <ProjectCard
               key={project.title}
               project={project}
@@ -229,10 +225,12 @@ export default function Portfolio() {
             "
           />
 
+          {/* CTA content */}
           <div className="relative flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
 
             <div>
 
+              {/* CTA eyebrow */}
               <div className="mb-4 flex items-center gap-2">
                 <Sparkles
                   size={15}
@@ -244,6 +242,7 @@ export default function Portfolio() {
                 </span>
               </div>
 
+              {/* CTA heading */}
               <h3 className="text-2xl font-bold tracking-tight sm:text-3xl">
                 Have a business that deserves
                 <span className="text-slate-400">
@@ -251,6 +250,7 @@ export default function Portfolio() {
                 </span>
               </h3>
 
+              {/* CTA description */}
               <p className="mt-3 max-w-xl text-sm leading-6 text-slate-400 sm:text-base">
                 Let's create a digital presence that makes your business
                 look as professional as the work you do.
@@ -258,6 +258,7 @@ export default function Portfolio() {
 
             </div>
 
+            {/* CTA button */}
             <a
               href="https://wa.me/2347079989263?text=Hi%20Osas%2C%20I'd%20like%20to%20discuss%20a%20website."
               target="_blank"
@@ -287,7 +288,12 @@ export default function Portfolio() {
 
               <ArrowUpRight
                 size={17}
-                className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+                className="
+                  transition-transform
+                  duration-300
+                  group-hover:translate-x-1
+                  group-hover:-translate-y-1
+                "
               />
             </a>
 
@@ -306,11 +312,9 @@ export default function Portfolio() {
 
 function ProjectCard({
   project,
-  featured = false,
   index = 0,
 }: {
   project: (typeof projects)[number];
-  featured?: boolean;
   index?: number;
 }) {
   return (
@@ -334,7 +338,7 @@ function ProjectCard({
         duration: 0.7,
         delay: index * 0.06,
       }}
-      className={`
+      className="
         group
         relative
         block
@@ -349,26 +353,19 @@ function ProjectCard({
         hover:-translate-y-2
         hover:border-slate-300
         hover:shadow-[0_30px_80px_rgba(15,23,42,0.12)]
-        ${featured ? "lg:rounded-[2.5rem]" : ""}
-      `}
+      "
     >
 
       {/* =========================================================
           PROJECT IMAGE
       ========================================================= */}
 
-      <div
-        className={`
-          relative
-          overflow-hidden
-          bg-slate-100
-          ${featured ? "aspect-[16/8.5]" : "aspect-[16/10]"}
-        `}
-      >
+      <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
 
         <img
           src={project.image}
           alt={`${project.title} website`}
+          loading="lazy"
           className="
             h-full
             w-full
@@ -381,7 +378,7 @@ function ProjectCard({
           "
         />
 
-        {/* Image overlay */}
+        {/* Image gradient */}
         <div
           className="
             absolute
@@ -394,9 +391,13 @@ function ProjectCard({
           "
         />
 
-        {/* Top project metadata */}
+        {/* =====================================================
+            IMAGE TOP METADATA
+        ===================================================== */}
+
         <div className="absolute left-5 right-5 top-5 flex items-center justify-between sm:left-7 sm:right-7 sm:top-7">
 
+          {/* Project type */}
           <span
             className="
               rounded-full
@@ -416,6 +417,7 @@ function ProjectCard({
             {project.type}
           </span>
 
+          {/* Open project */}
           <span
             className="
               flex
@@ -441,7 +443,10 @@ function ProjectCard({
 
         </div>
 
-        {/* Project number */}
+        {/* =====================================================
+            PROJECT NUMBER
+        ===================================================== */}
+
         <div className="absolute bottom-5 left-5 sm:bottom-7 sm:left-7">
           <span className="text-xs font-bold tracking-[0.25em] text-white/60">
             {project.number}
@@ -455,14 +460,11 @@ function ProjectCard({
           PROJECT CONTENT
       ========================================================= */}
 
-      <div
-        className={`
-          ${featured ? "p-7 sm:p-9 lg:p-10" : "p-7 sm:p-8"}
-        `}
-      >
+      <div className="p-7 sm:p-8">
 
         <div className="flex flex-col justify-between gap-6 sm:flex-row sm:gap-8">
 
+          {/* Project information */}
           <div className="max-w-2xl">
 
             <h3
@@ -486,6 +488,7 @@ function ProjectCard({
 
           </div>
 
+          {/* View project */}
           <div className="shrink-0">
 
             <span
@@ -503,6 +506,7 @@ function ProjectCard({
               "
             >
               View Project
+
               <ExternalLink size={13} />
             </span>
 
@@ -511,7 +515,9 @@ function ProjectCard({
         </div>
 
 
-        {/* Tags */}
+        {/* =====================================================
+            TAGS
+        ===================================================== */}
 
         <div className="mt-7 flex flex-wrap gap-2">
 
