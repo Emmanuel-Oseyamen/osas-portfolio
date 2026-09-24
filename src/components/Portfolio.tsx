@@ -16,7 +16,7 @@ const projects = [
       "A refined hospitality experience designed to present the property, showcase accommodation, and guide prospective guests toward enquiries.",
     tags: ["Hospitality", "Rooms", "Gallery"],
     link: "https://bisyl-suites.vercel.app/",
-    image: "/projects/bisyl-suites.png",
+    image: "/bisyl-suites.vercel.app.png",
   },
   {
     number: "02",
@@ -26,7 +26,7 @@ const projects = [
       "A premium hotel experience built around elegant presentation, accommodation discovery, visual storytelling, and direct guest enquiries.",
     tags: ["Luxury", "Hospitality", "Booking"],
     link: "https://fergmond-luxury-hotel.vercel.app/",
-    image: "/projects/fergmond-hotel.png",
+    image: "/fergmond-luxury-hotel.vercel.app.png",
   },
   {
     number: "03",
@@ -36,7 +36,7 @@ const projects = [
       "A modern restaurant and lounge experience created to showcase the dining atmosphere, signature offerings, and visual identity of the brand.",
     tags: ["Restaurant", "Menu", "Gallery"],
     link: "https://opheem-recipes-lounge.vercel.app/",
-    image: "/projects/opheem.png",
+    image: "/opheem-recipes-lounge.vercel.app.png",
   },
   {
     number: "04",
@@ -46,7 +46,7 @@ const projects = [
       "A cinematic hospitality website combining premium typography, immersive imagery, room presentation, and a refined guest journey.",
     tags: ["Luxury", "Rooms", "Hospitality"],
     link: "https://grand-cuba-hotel.vercel.app/",
-    image: "/projects/grand-cuba.png",
+    image: "/grand-cuba-hotel.vercel.app.png",
   },
   {
     number: "05",
@@ -56,7 +56,7 @@ const projects = [
       "A sophisticated digital presence designed around elegant visuals, accommodation discovery, and a seamless path toward reservations.",
     tags: ["Hospitality", "Rooms", "Reservations"],
     link: "https://malx-elegance-hotel-owq9.vercel.app/",
-    image: "/projects/maxl-elegance.png",
+    image: "/maxl-elegance-hotel-owq9.vercel.app.png",
   },
   {
     number: "06",
@@ -66,7 +66,7 @@ const projects = [
       "A property-focused website presenting apartment spaces, amenities, and essential information through a clean and professional experience.",
     tags: ["Apartments", "Property", "Gallery"],
     link: "https://esejones-jwoh.vercel.app/",
-    image: "/projects/ese-jones.png",
+    image: "/ese-jones-jwoh.vercel.app.png",
   },
   {
     number: "07",
@@ -76,7 +76,7 @@ const projects = [
       "A modern hospitality experience created to strengthen the hotel's online presence through structured information, visual presentation, and direct enquiries.",
     tags: ["Hotel", "Gallery", "Enquiries"],
     link: "https://goldstep-xi.vercel.app/",
-    image: "/projects/goldstep.png",
+    image: "/goldstep-xi.vercel.app.png",
   },
   {
     number: "08",
@@ -86,7 +86,7 @@ const projects = [
       "A modern hotel experience featuring room presentation, visual storytelling, booking enquiries, and WhatsApp integration for direct reservations.",
     tags: ["Booking", "Gallery", "WhatsApp"],
     link: "https://vnn-hotel.vercel.app/",
-    image: "/projects/vnn-hotel.png",
+    image: "/vnn-hotel.verrcel.app.png",
   },
 ];
 
