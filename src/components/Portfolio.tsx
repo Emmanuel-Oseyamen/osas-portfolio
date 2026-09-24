@@ -56,7 +56,7 @@ const projects = [
       "A sophisticated digital presence designed around elegant visuals, accommodation discovery, and a seamless path toward reservations.",
     tags: ["Hospitality", "Rooms", "Reservations"],
     link: "https://malx-elegance-hotel-owq9.vercel.app/",
-    image: "/maxl-elegance-hotel-owq9.vercel.app.png",
+    image: "/malx-elegance-hotel-owq9.vercel.app.png",
   },
   {
     number: "06",
@@ -66,7 +66,7 @@ const projects = [
       "A property-focused website presenting apartment spaces, amenities, and essential information through a clean and professional experience.",
     tags: ["Apartments", "Property", "Gallery"],
     link: "https://esejones-jwoh.vercel.app/",
-    image: "/ese-jones-jwoh.vercel.app.png",
+    image: "/esejones-jwoh.vercel.app.png",
   },
   {
     number: "07",
