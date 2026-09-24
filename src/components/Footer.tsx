@@ -217,7 +217,7 @@ export default function Footer() {
             </div>
 
             <p className="mt-6 max-w-md text-sm leading-7 text-slate-400">
-              I design and develop modern websites for hotels, restaurants,
+              We design and develop modern websites for hotels, restaurants,
               schools, clinics, apartments, and ambitious businesses that
               want a stronger presence online.
             </p>
@@ -490,38 +490,6 @@ export default function Footer() {
 
             {/* Socials */}
             <div className="flex items-center gap-5">
-
-              <a
-                href="https://github.com/yourusername"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="
-                  text-xs
-                  font-medium
-                  text-slate-500
-                  transition-colors
-                  hover:text-white
-                "
-              >
-                GitHub
-              </a>
-
-              <a
-                href="https://linkedin.com/in/yourusername"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="
-                  text-xs
-                  font-medium
-                  text-slate-500
-                  transition-colors
-                  hover:text-white
-                "
-              >
-                LinkedIn
-              </a>
-
-              <span className="h-4 w-px bg-white/10" />
 
               {/* Back to top */}
               <button
